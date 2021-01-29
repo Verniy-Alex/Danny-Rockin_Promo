@@ -1,0 +1,229 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+button{
+    cursor: pointer;
+}
+
+html{
+    overflow-x: hidden;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Common */
+.container{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+.main-bg{
+    max-width: 100%;
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient( rgba(59, 59, 59, 0.4),
+    rgba(0, 0, 0, 0.4) ),
+    url(../img/DR2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+}
+
+.nav-menu-button{
+    max-width: 100%;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    z-index: 20;
+}
+.nav-menu-button i {
+    cursor: pointer;
+    color: #fff;
+    font-size: 45px;
+    transition: .3s ease-in-out;
+}
+.nav-menu-button i:hover{
+    transform: rotate(-180deg);
+}
+.navmenu{
+    position: fixed;
+    top: 0;
+    right:-350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    background: #222;
+    height: 100%;
+    width: 350px;
+    max-width: 100%;
+    transition: .5s ease-in-out;
+    border-left: 1px solid #b4b3b3;
+    opacity: 0.95;
+    z-index: 10;
+}
+.navmenu-items{
+    top: 30%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 15px;
+}
+.navmenu-links{
+    color: #b4b3b3;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    transition: .2s ease-in-out;
+}
+.navmenu-links:hover{
+    transform: scale(1.2);
+    color: #fff;
+}
+.active{
+    right: 0;
+}
+
+.change-lang-box{
+    display: flex;
+    padding-top: 20px;
+    margin-left: 25px;
+}
+.change-lang{
+    color:#b4b3b3 ;
+    margin-left: 10px;
+    font-weight: bold;
+    transition: .2s ease-in-out;
+}
+.change-lang:hover{
+    color: #fff;
+}
+.change-lang:focus{
+    color: #fff;
+}
+.logo-box{
+    position: absolute;
+    left: 5%;
+    top: 20%;
+}
+.logo-img{
+    max-width: 100%;
+    width: 400px;
+    transition: .3s ease-in-out;
+}
+.logo-img:hover{
+    transform: scale(1.05);
+}
+.main-content-icons{
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+}
+.main-content-icons i {
+    font-size: 44px;
+    margin: 10px;
+    color:#b4b3b3;
+    transition: .3s ease-in-out;
+    text-shadow: 1px 1px 2px black, 0 0 15px rgb(2, 2, 2);
+}
+.main-content-icons i:hover{
+    color: #fff;
+    transform: rotate(360deg);
+}
+
+
+@media screen and (max-width:768px){
+.main-bg{
+    max-width: 100%;
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient( rgba(59, 59, 59, 0.4),
+    rgba(0, 0, 0, 0.4) ),
+    url(../img/DR2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+}
+.logo-box{
+    position: absolute;
+    left: 20%;
+    top: 25%;
+}
+.main-content-icons{
+    left: 27%;
+}
+}
+
+
+@media screen and (max-width:500px){
+.main-bg{
+    max-width: 100%;
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient( rgba(59, 59, 59, 0.4),
+    rgba(0, 0, 0, 0.4) ),
+    url(../img/DR2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+}
+.logo-box{
+    position: absolute;
+    left:7%;
+    top: 27%;
+    max-width: 100%;
+}
+.logo-img{
+    max-width: 100%;
+    width: 350px;
+}
+.main-content-icons i{
+    font-size: 40px;
+}
+.main-content-icons{
+    left:7%;
+    max-width: 100%;
+}
+
+}
+
+@media screen and (max-width:380px){
+.main-bg{
+    max-width: 100%;
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient( rgba(59, 59, 59, 0.4),
+    rgba(0, 0, 0, 0.4) ),
+    url(../img/DR2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+}
+.main-content-icons i{
+    font-size: 30px;
+}
+.logo-box{
+    left: 0;
+}
+.logo-img{
+    max-width: 100%;
+    width: 300px;
+}
+}
